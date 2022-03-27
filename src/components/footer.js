@@ -25,6 +25,7 @@ const StyledSocialLinks = styled.div`
     margin: 0;
     list-style: none;
     a {
+      ${({ theme }) => theme.mixins.bracketLink};
       padding: 10px;
     }
   }
