@@ -110,6 +110,7 @@ const GlobalStyle = createGlobalStyle`
   .ascii {
     font-size: clamp(6px, 1vw, var(--fz-sm));
     white-space: pre;
+    font-weight: 900;
   }
   .big-heading {
     margin: 0;
