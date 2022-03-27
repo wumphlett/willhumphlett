@@ -1,6 +1,42 @@
+const config = require('./src/config');
+
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'Will Humphlett',
+    description: 'Will Humphlett is a software engineer who writes code.',
+    siteUrl: `https://willhumphlett.com`,
+    image: '/og.png',
+    twitterUsername: '@test',
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
+    'gatsby-image',
+    'gatsby-plugin-sharp',
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'WillHumphlett',
+        short_name: 'WillHumphlett',
+        start_url: '/',
+        background_color: config.colors.black,
+        theme_color: config.colors.black,
+        display: 'minimal-ui',
+        icon: 'src/images/logo.png',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/content/`,
+      },
+    },
+    'gatsby-transformer-remark',
+  ],
 }
