@@ -245,7 +245,7 @@ const Featured = () => {
 
   return (
     <StyledFeaturedSection id="projects">
-      <h2 className="section-heading">Featured-Projects</h2>
+      <h2 className="section-heading">Projects</h2>
 
       <StyledProjectsGrid>
         {featuredProjects &&
