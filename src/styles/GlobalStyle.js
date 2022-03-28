@@ -132,16 +132,17 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
+    text-shadow: 0 0 5px;
     &:before {
-      bottom: 4px;
       content: '/heading/';
+      position: relative;
       color: var(--blue);
       font-family: var(--font-mono);
+      font-size: clamp(26px, 5vw, var(--fz-heading));
       font-weight: 400;
       text-shadow: 0 0 5px;
-      @media (max-width: 480px) {
-        margin-bottom: -3px;
-        margin-right: 5px;
+      @media (max-width: 700px) {
+        content: '/h/';
       }
     }
   }

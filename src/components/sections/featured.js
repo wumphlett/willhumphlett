@@ -89,6 +89,9 @@ const StyledProject = styled.li`
       text-shadow: 0 0 5px;
       font-weight: 400;
       color: var(--blue);
+      @media (max-width: 700px) {
+        content: '/p/';
+      }
     }
     a:hover,
     a:focus,
