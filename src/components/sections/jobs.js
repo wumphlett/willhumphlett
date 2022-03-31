@@ -18,12 +18,11 @@ const StyledJobsSection = styled.section`
 
 const StyledTabList = styled.div`
   position: relative;
-  z-index: 3;
   width: max-content;
   padding: 0;
   margin: 0;
   list-style: none;
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     display: flex;
     overflow-x: auto;
     width: calc(100% + 100px);

@@ -5,11 +5,11 @@ const variables = css`
     --black: #0a0e14;
     --blackish: #131a26;
     --light-black: #4d5566;
-    --gray: #b3b1ad;
+    --gray: #c2c1bd;
     --red: #ff3333;
     --green: #c2d94c;
-    --orange: #ff8f40;
-    --dark-orange: #ad622b;
+    --orange: #ff9245;
+    --dark-orange: #C77133;
     --blue: #59c2ff;
     --yellow: #ffee99;
     --mint: #95e6cb;

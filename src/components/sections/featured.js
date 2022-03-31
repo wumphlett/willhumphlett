@@ -89,7 +89,7 @@ const StyledProject = styled.li`
       text-shadow: 0 0 5px;
       font-weight: 400;
       color: var(--blue);
-      @media (max-width: 700px) {
+      @media (max-width: 1000px) {
         content: '/p/';
       }
     }
@@ -126,6 +126,7 @@ const StyledProject = styled.li`
     @media (max-width: 600px) {
       grid-template-columns: repeat(2, minmax(140px, 200px));
     }
+    z-index: 1;
     grid-gap: 0 10px;
     padding: 0;
     margin: 25px 0 10px;
@@ -179,6 +180,7 @@ const StyledProject = styled.li`
     grid-column: 7 / -1;
     grid-row: 1 / -1;
     position: relative;
+    z-index: 0;
     @media (max-width: 768px) {
       display: none;
     }
