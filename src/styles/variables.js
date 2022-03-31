@@ -16,7 +16,7 @@ const variables = css`
 
     --font-mono: 'Hack', monospace;
 
-    --fz-xxxs: 11px;
+    --fz-xxxs: 10px;
     --fz-xxs: 12px;
     --fz-xs: 13px;
     --fz-sm: 14px;
