@@ -17,8 +17,11 @@ const StyledHeroSection = styled.section`
   .ascii {
     float: left;
     width: fit-content;
-    font-size: clamp(6px, .75vw, var(--fz-xxxs));
+    font-size: clamp(4px, .8vw, var(--fz-sm));
     margin: 20px 0 0 0;
+    @media (max-width: 780px) {
+      margin: 15px 0 10px 0;
+    }
   }
   h3 {
     position: relative;
@@ -31,8 +34,11 @@ const StyledHeroSection = styled.section`
     margin: 10px 0 10px;
     max-width: 700px;
     &:last-of-type {
-      @media (max-width: 640px) {
-        margin: 0 0 10px 5px;
+      @media (max-width: 416px) {
+      margin: 0 0 10px 5px;
+      }
+      @media (min-width: 1432px) {
+        margin: 0 0 10px 15px;
       }
     }
   }
