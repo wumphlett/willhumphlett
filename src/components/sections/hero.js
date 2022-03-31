@@ -22,6 +22,9 @@ const StyledHeroSection = styled.section`
     @media (max-width: 780px) {
       margin: 15px 0 10px 0;
     }
+    @media (max-width: 416px) {
+      font-size: clamp(4px, 1.3vw, var(--fz-sm));
+    }
   }
   h3 {
     position: relative;
@@ -35,7 +38,7 @@ const StyledHeroSection = styled.section`
     max-width: 700px;
     &:last-of-type {
       @media (max-width: 416px) {
-      margin: 0 0 10px 5px;
+        margin: 0 0 10px 5px;
       }
       @media (min-width: 1432px) {
         margin: 0 0 10px 15px;
