@@ -10,8 +10,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     width: 100%;
     scroll-behavior: smooth;
+    scroll-padding-top: 30px;
     scrollbar-width: thin;
-    //scrollbar-color: var(--dark-slate) var(--navy);
+    scrollbar-color: var(--gray) var(--black);
   }
   *,
   *:before,
@@ -104,13 +105,15 @@ const GlobalStyle = createGlobalStyle`
   
   em {
     font-style: normal;
-    text-shadow: 0 0 5px;color: var(--mint);
+    text-shadow: 0 0 5px;
+    color: var(--mint);
   }
 
   .ascii {
     font-size: clamp(6px, 1vw, var(--fz-sm));
     white-space: pre;
     font-weight: 900;
+    text-shadow: 0 0 3px;
   }
   .big-heading {
     margin: 0;

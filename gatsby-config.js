@@ -19,9 +19,9 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'WillHumphlett',
+        name: 'Will Humphlett',
         short_name: 'WillHumphlett',
         start_url: '/',
         background_color: config.colors.black,

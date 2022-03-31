@@ -9,13 +9,14 @@ const variables = css`
     --red: #ff3333;
     --green: #c2d94c;
     --orange: #ff9245;
-    --dark-orange: #C77133;
+    --dark-orange: #c77133;
     --blue: #59c2ff;
     --yellow: #ffee99;
     --mint: #95e6cb;
 
     --font-mono: 'Hack', monospace;
 
+    --fz-xxxs: 11px;
     --fz-xxs: 12px;
     --fz-xs: 13px;
     --fz-sm: 14px;

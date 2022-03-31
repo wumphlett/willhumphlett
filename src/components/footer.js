@@ -59,7 +59,7 @@ const Footer = () => {
       </StyledSocialLinks>
 
       <StyledCredit tabindex="-1">
-        <div>Built with inspo from <a href="https://github.com/bchiang7/v4">Brittany Chiang</a> &amp; <a href="https://adventofcode.com/">AoC</a></div>
+        <div>Built with inspo from <a href="https://github.com/bchiang7/v4">Brittany Chiang</a> &amp; <a href="https://adventofcode.com/">AoC</a> &amp; <a href="https://patorjk.com/software/taag/">Patorjk</a></div>
         <div>Source on <a href="https://github.com/wumphlett/willhumphlett">GitHub</a></div>
       </StyledCredit>
     </StyledFooter>
