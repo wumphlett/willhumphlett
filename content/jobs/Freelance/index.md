@@ -1,7 +1,7 @@
 ---
-date: '2022-01-01'
-title: 'Freelance Developer'
-company: 'Freelance'
+date: '0'
+title: 'Freelance'
+company: 'Multiple'
 location: 'Remote'
 range: 'January 2020 - Present'
 url: 'https://www.zincgroup.com/'

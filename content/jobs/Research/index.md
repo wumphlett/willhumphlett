@@ -1,6 +1,6 @@
 ---
-date: '2021-12-19'
-title: 'Research Assistant'
+date: '1'
+title: 'Research Asst.'
 company: 'Auburn'
 location: 'Auburn, AL'
 range: 'January 2021 - Present'

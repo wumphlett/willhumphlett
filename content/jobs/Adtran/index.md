@@ -1,6 +1,6 @@
 ---
-date: '2021-08-19'
-title: 'Software Engineer Co-op'
+date: '2'
+title: 'Co-op'
 company: 'Adtran'
 location: 'Huntsville, AL'
 range: 'January 2020 - August 2021'

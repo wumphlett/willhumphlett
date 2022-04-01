@@ -1,6 +1,6 @@
 ---
-date: '2022-08-19'
-title: 'Software Engineer Intern'
+date: '3'
+title: 'Intern'
 company: 'Roblox'
 location: 'San Mateo, CA'
 range: 'May 2022 - August 2022'
