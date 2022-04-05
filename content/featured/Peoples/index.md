@@ -6,7 +6,7 @@ github: 'https://github.com/wumphlett/Peoples-Advisor'
 external: ''
 tech:
 - python
-- event-driven
+- events
 - stats
 ---
 

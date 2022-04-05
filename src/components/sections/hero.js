@@ -17,7 +17,7 @@ const StyledHeroSection = styled.section`
   .ascii {
     float: left;
     width: fit-content;
-    font-size: clamp(4px, .8vw, var(--fz-sm));
+    font-size: clamp(4px, .70vw, var(--fz-sm));
     margin: 20px 0 0 0;
     @media (max-width: 780px) {
       margin: 15px 0 10px 0;
@@ -40,7 +40,7 @@ const StyledHeroSection = styled.section`
       @media (max-width: 416px) {
         margin: 0 0 10px 5px;
       }
-      @media (min-width: 1432px) {
+      @media (min-width: 1613px) {
         margin: 0 0 10px 15px;
       }
     }

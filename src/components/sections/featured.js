@@ -123,7 +123,7 @@ const StyledProject = styled.li`
   .project-tech-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(140px, 200px));
-    @media (max-width: 600px) {
+    @media (max-width: 1120px) {
       grid-template-columns: repeat(2, minmax(140px, 200px));
     }
     z-index: 1;
@@ -188,6 +188,7 @@ const StyledProject = styled.li`
       width: 100%;
       height: 100%;
       vertical-align: middle;
+      background-color: var(--blackish);
       &:hover,
       &:focus {
         background: transparent;

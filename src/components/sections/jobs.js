@@ -61,8 +61,9 @@ const StyledTabButton = styled.button`
   width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
-  background-color: transparent;
   border: none;
+  border-left: 2px solid var(--light-black);
+  background-color: transparent;
   color: ${({ isActive }) => (isActive ? 'var(--mint)' : 'var(--gray)')};
   text-shadow: ${({ isActive }) => (isActive ? '0 0 5px' : 'none')};
   font-family: var(--font-mono);
@@ -72,11 +73,12 @@ const StyledTabButton = styled.button`
   @media (max-width: 768px) {
     padding: 0 15px 2px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     ${({ theme }) => theme.mixins.flexCenter};
-    min-width: 120px;
+    max-width: 120px;
     padding: 0 15px;
     border-left: 0;
+    border-bottom: 2px solid var(--light-black);
     text-align: center;
   }
   &:hover,
@@ -88,6 +90,31 @@ const StyledTabButton = styled.button`
     content: '/job/';
     color: var(--blue);
     text-shadow: 0 0 5px;
+  }
+`;
+
+const StyledHighlight = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 2px;
+  height: var(--tab-height);
+  border-radius: var(--border-radius);
+  background: var(--mint);
+  transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  @media (max-width: 800px) {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    max-width: var(--tab-width);
+    height: 2px;
+    margin-left: 50px;
+    transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+  }
+  @media (max-width: 480px) {
+    margin-left: 25px;
   }
 `;
 
@@ -154,6 +181,7 @@ const Jobs = () => {
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
+  const revealContainer = useRef(null);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
@@ -217,6 +245,7 @@ const Jobs = () => {
                 </StyledTabButton>
               );
             })}
+          <StyledHighlight activeTabId={activeTabId} />
         </StyledTabList>
 
         <StyledTabPanels>
