@@ -44,6 +44,9 @@ module.exports = {
         trackingIds: [
           "G-DRXT1TX1T7"
         ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],
