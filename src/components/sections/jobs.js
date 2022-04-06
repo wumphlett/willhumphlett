@@ -75,6 +75,7 @@ const StyledTabButton = styled.button`
   }
   @media (max-width: 800px) {
     ${({ theme }) => theme.mixins.flexCenter};
+    min-width: 120px;
     max-width: 120px;
     padding: 0 15px;
     border-left: 0;
@@ -181,7 +182,6 @@ const Jobs = () => {
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
-  const revealContainer = useRef(null);
 
   const focusTab = () => {
     if (tabs.current[tabFocus]) {
