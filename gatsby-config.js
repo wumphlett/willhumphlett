@@ -39,7 +39,7 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
           "G-DRXT1TX1T7"
