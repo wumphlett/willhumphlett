@@ -62,7 +62,6 @@ const StyledTabButton = styled.button`
   height: var(--tab-height);
   padding: 0 20px 2px;
   border: none;
-  border-left: 2px solid var(--light-black);
   background-color: transparent;
   color: ${({ isActive }) => (isActive ? 'var(--mint)' : 'var(--gray)')};
   text-shadow: ${({ isActive }) => (isActive ? '0 0 5px' : 'none')};
