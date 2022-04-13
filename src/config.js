@@ -37,5 +37,4 @@ module.exports = {
     red: '#ff3333',
     blue: '#59c2ff',
   },
-
 };

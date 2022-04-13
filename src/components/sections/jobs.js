@@ -100,22 +100,23 @@ const StyledHighlight = styled.div`
   left: 0;
   z-index: 10;
   width: 2px;
+  &:before {
+    line-height: var(--tab-height);
+    font-size: var(--fz-md);
+    content: '>';
+  }
   height: var(--tab-height);
   border-radius: var(--border-radius);
-  background: var(--mint);
+  color: var(--mint);
+  margin-left: -4px;
   transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
   @media (max-width: 800px) {
-    top: auto;
-    bottom: 0;
-    width: 100%;
-    max-width: var(--tab-width);
-    height: 2px;
-    margin-left: 50px;
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
+    margin-left: 45px;
   }
   @media (max-width: 480px) {
-    margin-left: 25px;
+    margin-left: 20px;
   }
 `;
 
