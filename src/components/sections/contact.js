@@ -9,7 +9,7 @@ const StyledContactSection = styled.section`
   @media (max-width: 768px) {
     margin: 0 auto 50px;
   }
-  .email-link {
+  .contact-link {
     ${({ theme }) => theme.mixins.bracketLink};
     margin-top: 50px;
   }
@@ -31,10 +31,10 @@ const Contact = () => {
         If you have a question or wish to collaborate on something please don't hesitate to reach out, I'll get back to you as soon as I can!
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
+      <a className="contact-link" href={`mailto:${email}`}>
         Email
       </a>
-      <a className="email-link" href={`https://discordapp.com/channels/@me/${discord}/`}>
+      <a className="contact-link" href={`https://discordapp.com/channels/@me/${discord}/`}>
         Discord
       </a>
     </StyledContactSection>

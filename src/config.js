@@ -5,14 +5,17 @@ module.exports = {
   socialMedia: [
     {
       name: 'Twitter',
+      short: 'Twt',
       url: 'https://twitter.com/willhumphlett',
     },
     {
       name: 'GitHub',
+      short: 'Gh',
       url: 'https://github.com/wumphlett',
     },
     {
       name: 'LinkedIn',
+      short: 'Li',
       url: 'https://www.linkedin.com/in/willhumphlett',
     },
   ],

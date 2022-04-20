@@ -27,8 +27,9 @@ const StyledText = styled.div`
       margin-bottom: 10px;
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
+      text-shadow: 0 0 3px;
       &:before {
-        content: '/skills/';
+        content: '/skl/';
         color: var(--blue);
         font-size: var(--fz-sm);
         line-height: 12px;

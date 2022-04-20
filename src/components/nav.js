@@ -117,7 +117,7 @@ const Nav = () => {
                   </li>
                 ))}
                 <li>
-                  <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="bracket-link">Resume</Link>
+                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="bracket-link">Resume</a>
                 </li>
             </ol>
           </StyledLinks>

@@ -109,7 +109,7 @@ const StyledHighlight = styled.div`
   color: var(--mint);
   margin-left: -4px;
   transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
-  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   @media (max-width: 800px) {
     transform: translateX(calc(${({ activeTabId }) => activeTabId} * var(--tab-width)));
     margin-left: 45px;
@@ -199,6 +199,7 @@ const Jobs = () => {
   };
 
   // Only re-run the effect if tabFocus changes
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => focusTab(), [tabFocus]);
 
   const onKeyDown = e => {

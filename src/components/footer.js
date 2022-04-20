@@ -53,10 +53,10 @@ const Footer = () => {
       <StyledSocialLinks>
         <ul>
           {socialMedia &&
-            socialMedia.map(({ name, url }, i) => (
+            socialMedia.map(({ name, short, url }, i) => (
               <li key={i}>
                 <a href={url} aria-label={name}>
-                  {name}
+                  {short}
                 </a>
               </li>
             ))}
