@@ -3,7 +3,7 @@ const config = require('./src/config');
 module.exports = {
   siteMetadata: {
     title: 'Will Humphlett',
-    description: 'Will Humphlett is a software engineer who writes code.',
+    description: 'Will Humphlett writes code.',
     siteUrl: 'https://willhumphlett.com',
     image: '/og.png',
     twitterUsername: '@willhumphlett',

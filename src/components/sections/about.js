@@ -27,7 +27,6 @@ const StyledText = styled.div`
       margin-bottom: 10px;
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
-      text-shadow: 0 0 3px;
       &:before {
         content: '/skl/';
         color: var(--blue);

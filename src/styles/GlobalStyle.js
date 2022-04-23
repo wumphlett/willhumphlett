@@ -113,7 +113,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: clamp(6px, 1vw, var(--fz-sm));
     white-space: pre;
     font-weight: 900;
-    text-shadow: 0 0 3px;
   }
   .big-heading {
     margin: 0;
