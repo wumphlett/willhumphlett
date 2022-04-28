@@ -81,7 +81,7 @@ const mixins = {
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: var(--fz-xs);
+    font-size: var(--fz-sm);
     li {
       position: relative;
       padding-left: 30px;

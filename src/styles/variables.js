@@ -8,8 +8,8 @@ const variables = css`
     --gray: #c2c1bd;
     --red: #ff3333;
     --green: #c2d94c;
-    --orange: #ff9245;
-    --dark-orange: #c77133;
+    --orange: #fc8b3a;
+    --dark-orange: #c75c10;
     --blue: #59c2ff;
     --yellow: #ffee99;
     --mint: #95e6cb;

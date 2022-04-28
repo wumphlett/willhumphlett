@@ -66,7 +66,7 @@ const StyledTabButton = styled.button`
   color: ${({ isActive }) => (isActive ? 'var(--mint)' : 'var(--gray)')};
   text-shadow: ${({ isActive }) => (isActive ? '0 0 5px' : 'none')};
   font-family: var(--font-mono);
-  font-size: var(--fz-xs);
+  font-size: var(--fz-sm);
   text-align: left;
   white-space: nowrap;
   @media (max-width: 768px) {

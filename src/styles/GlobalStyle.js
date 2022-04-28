@@ -175,7 +175,7 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     margin: 0 0 15px 0;
-    font-size: var(--fz-sm);
+    font-size: var(--fz-md);
   }
 
   .fadeup-enter {

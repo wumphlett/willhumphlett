@@ -26,7 +26,7 @@ const StyledText = styled.div`
       position: relative;
       margin-bottom: 10px;
       font-family: var(--font-mono);
-      font-size: var(--fz-xs);
+      font-size: var(--fz-sm);
       &:before {
         content: '/skl/';
         color: var(--blue);

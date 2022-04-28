@@ -136,7 +136,7 @@ const StyledProject = styled.li`
       margin: 0 20px 5px 0;
       color: var(--gray);
       font-family: var(--font-mono);
-      font-size: var(--fz-xs);
+      font-size: var(--fz-sm);
       white-space: nowrap;
       text-align: left;
       &:before {
