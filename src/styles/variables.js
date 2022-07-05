@@ -24,6 +24,7 @@ const variables = css`
     --fz-xl: 20px;
     --fz-xxl: 22px;
     --fz-heading: 32px;
+    --fz-ascii: clamp(6px, 1vw, var(--fz-sm));
     
     --border-radius: 4px;
     --nav-height: 100px;

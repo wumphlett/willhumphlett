@@ -110,7 +110,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .ascii {
-    font-size: clamp(6px, 1vw, var(--fz-sm));
+    font-size: var(--fz-ascii);
     white-space: pre;
     font-weight: 900;
   }
