@@ -11,19 +11,22 @@ const StyledHeroSection = styled.section`
   h1 {
     margin: 0 0 0 0;
     color: var(--mint);
-    font-size: clamp(var(--fz-md), 5vw, var(--fz-lg));
+    font-size: clamp(var(--fz-md), 3.5vw, var(--fz-xl));
     font-weight: 400;
+    opacity: 0.8;
+  }
+  .title-container {
+    width: 100vw;
   }
   .ascii {
     float: left;
     width: fit-content;
-    font-size: clamp(4px, .70vw, var(--fz-sm));
+    font-size: clamp(4px, .85vw, var(--fz-xxs));
+    display: inline-block;
     margin: 20px 0 0 0;
-    @media (max-width: 780px) {
+    @media (max-width: 768px) {
+      font-size: clamp(4px, 1.4vw, var(--fz-sm));
       margin: 15px 0 10px 0;
-    }
-    @media (max-width: 416px) {
-      font-size: clamp(4px, 1.3vw, var(--fz-sm));
     }
   }
   h3 {
@@ -32,12 +35,18 @@ const StyledHeroSection = styled.section`
     line-height: 0.9;
     top: -15px;
     z-index: 2;
+    opacity: 0.8;
   }
   p {
     margin: 10px 0 10px;
     max-width: 700px;
+    &:first-of-type {
+      @media (max-width: 768px) {
+        margin: 15px 0 0 0;
+      }
+    }
     &:last-of-type {
-      @media (max-width: 416px) {
+      @media (max-width: 768px) {
         margin: 0 0 10px 5px;
       }
       @media (min-width: 1613px) {
@@ -46,6 +55,8 @@ const StyledHeroSection = styled.section`
     }
   }
 `;
+
+// █
 
 /*
 oooooo   oooooo     oooo  o8o  oooo  oooo       ooooo   ooooo                                          oooo        oooo                .       .
@@ -63,7 +74,7 @@ const Hero = () => {
   return (
     <StyledHeroSection>
       <div><h1><em>Hello hello, I'm</em></h1></div>
-      <div>
+          <div className="title-container">
         <p className="ascii" alt="Will Humphlett" title="Will Humphlett">
           oooooo   oooooo     oooo  o8o  oooo  oooo{"\n"}
           &nbsp;`888.    `888.     .8'   `"'  `888  `888{"\n"}
@@ -87,7 +98,7 @@ const Hero = () => {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o888o{"\n"}
         </p>
       </div>
-      <div><h3 className="small-heading">I write code.</h3></div>
+          <div><h3 className="small-heading">I write code.</h3></div>
     </StyledHeroSection>
   )
 };

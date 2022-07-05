@@ -111,6 +111,7 @@ const GlobalStyle = createGlobalStyle`
 
   .ascii {
     font-size: var(--fz-ascii);
+    text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
     white-space: pre;
     font-weight: 900;
   }
@@ -124,7 +125,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .small-heading {
     margin: 0;
-    font-size: clamp(30px, 7vw, 50px);
+    font-size: clamp(35px, 4.5vw, 50px);
   }
   .section-heading {
     display: flex;
@@ -136,7 +137,7 @@ const GlobalStyle = createGlobalStyle`
     white-space: nowrap;
     text-shadow: 0 0 5px;
     &:before {
-      content: '/heading/';
+      content: '/hdng/';
       position: relative;
       color: var(--blue);
       font-family: var(--font-mono);
