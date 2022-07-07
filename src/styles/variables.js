@@ -14,6 +14,9 @@ const variables = css`
     --yellow: #ffee99;
     --mint: #95e6cb;
 
+    --github-dm: #0d1117;
+    --github-lm: #ffffff;
+
     --font-mono: 'Hack', monospace;
 
     --fz-xxs: 12px;
