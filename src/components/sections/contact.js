@@ -19,6 +19,9 @@ const StyledContactSection = styled.section`
   h2 {
     text-align: left;
   }
+  p {
+    font-size: var(--fz-md);
+  }
 `;
 
 const Contact = () => {

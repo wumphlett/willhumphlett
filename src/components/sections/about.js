@@ -36,6 +36,9 @@ const StyledText = styled.div`
       }
     }
   }
+  p {
+    font-size: var(--fz-md);
+  }
 `;
 
 const StyledAscii = styled.div`

@@ -15,18 +15,11 @@ const StyledHeroSection = styled.section`
     font-weight: 400;
     opacity: 0.8;
   }
-  .title-container {
-    width: 100vw;
-  }
   .ascii {
-    float: left;
-    width: fit-content;
+    width: 100vw;
     font-size: clamp(4px, .85vw, var(--fz-xxs));
-    display: inline-block;
-    margin: 20px 0 0 0;
     @media (max-width: 768px) {
-      font-size: clamp(4px, 1.4vw, var(--fz-sm));
-      margin: 15px 0 10px 0;
+      font-size: clamp(4px, 1.3vw, var(--fz-sm));
     }
   }
   h3 {
@@ -38,8 +31,14 @@ const StyledHeroSection = styled.section`
     opacity: 0.8;
   }
   p {
-    margin: 10px 0 10px;
+    float: left;
+    width: fit-content;
+    display: inline-block;
     max-width: 700px;
+    margin: 20px 0 0 0;
+    @media (max-width: 768px) {
+      margin: 15px 0 10px 0;
+    }
     &:first-of-type {
       @media (max-width: 768px) {
         margin: 15px 0 0 0;
@@ -74,8 +73,8 @@ const Hero = () => {
   return (
     <StyledHeroSection>
       <div><h1><em>Hello hello, I'm</em></h1></div>
-          <div className="title-container">
-        <p className="ascii" alt="Will Humphlett" title="Will Humphlett">
+          <div className="ascii">
+        <p alt="Will Humphlett" title="Will Humphlett">
           oooooo   oooooo     oooo  o8o  oooo  oooo{"\n"}
           &nbsp;`888.    `888.     .8'   `"'  `888  `888{"\n"}
           &nbsp;&nbsp;`888.   .8888.   .8'   oooo   888   888{"\n"}
@@ -86,7 +85,7 @@ const Hero = () => {
           {"\n"}
           {"\n"}
         </p>
-        <p className="ascii" alt="Will Humphlett" title="Will Humphlett">
+        <p alt="Will Humphlett" title="Will Humphlett">
           ooooo   ooooo                                          oooo        oooo                .       .{"\n"}
           `888'   `888'                                          `888        `888              .o8     .o8{"\n"}
           &nbsp;888     888  oooo  oooo  ooo. .oo.  .oo.   oo.ooooo.   888 .oo.    888   .ooooo.  .o888oo .o888oo{"\n"}
