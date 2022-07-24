@@ -48,9 +48,6 @@ const StyledHeroSection = styled.section`
       @media (max-width: 768px) {
         margin: 0 0 10px 5px;
       }
-      @media (min-width: 1613px) {
-        margin: 0 0 10px 15px;
-      }
     }
   }
 `;

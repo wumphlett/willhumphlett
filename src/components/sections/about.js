@@ -60,7 +60,7 @@ const StyledAscii = styled.div`
 
 const About = () => {
 
-  const skills = ['python', 'java', 'c|++', 'bash', 'linux', 'git'];
+  const skills = ['python', 'go', 'c/++', 'bash', 'linux', 'git'];
 
   return (
     <StyledAboutSection id="about">
