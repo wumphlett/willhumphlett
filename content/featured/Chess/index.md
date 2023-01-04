@@ -2,12 +2,12 @@
 date: '1'
 title: 'Chess-Bot'
 cover: './demo.png'
-github: 'https://github.com/wumphlett'
+github: 'https://github.com/wumphlett/Chess-Bot'
 external: ''
 tech:
 - python
 - ml
-- ai
+- tf
 ---
 
 A <em>chess bot</em> that plays live and <em>tries not to suck</em>.  
