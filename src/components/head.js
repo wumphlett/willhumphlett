@@ -59,6 +59,8 @@ const Head = ({ title, description, image }) => {
       <meta name="google-site-verification" content="vgGszbqsM2On89IzRir0eCUapCwPUi4TXondmHRJfrA" />
 
       <meta httpEquiv="cache-control" content="no-cache" />
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>
   );
 };
