@@ -1,12 +1,12 @@
 module.exports = {
   email: 'will@humphlett.net',
-  discord: 'yotta#4099',
+  discord: 'everym4n',
 
   socialMedia: [
     {
-      name: 'Twitter',
-      short: 'Twt',
-      url: 'https://twitter.com/willhumphlett',
+      name: 'Twitter/X',
+      short: 'Twt/X',
+      url: 'https://x.com/willhumphlett',
     },
     {
       name: 'GitHub',

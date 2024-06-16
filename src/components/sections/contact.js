@@ -4,10 +4,10 @@ import { discord, email } from '@config';
 
 const StyledContactSection = styled.section`
   max-width: 900px;
-  margin: 0 auto 100px;
+  margin: 0 auto 0;
   text-align: center;
   @media (max-width: 768px) {
-    margin: 0 auto 50px;
+    margin: 0 auto 0;
   }
   .contact-link {
     ${({ theme }) => theme.mixins.bracketLink};

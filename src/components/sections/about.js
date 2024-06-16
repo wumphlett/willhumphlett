@@ -60,7 +60,7 @@ const StyledAscii = styled.div`
 
 const About = () => {
 
-  const skills = ['python', 'go', 'c/++', 'bash', 'linux', 'git'];
+  const skills = ['go', 'c/++', 'python', 'sql'];
 
   return (
     <StyledAboutSection id="about">
@@ -70,13 +70,17 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello Hello! My name is Will and I'm a software engineer. Lately I've been focusing most of my work on <em>backend development</em> and <em>internal tooling</em>. I have a passion for writing good code and bettering the lives of my fellow developers.
+              Hello Hello! My name is Will and I'm a software engineer. Lately I've been working to leverage
+              <em>analytics</em> to improve user <em>acquisition, retention, and monetization</em>. I have a passion
+              for creating scalable systems and writing good code.
             </p>
             <p>
-              To date I've had the privilege of bouncing between teams at my <em>co-op</em>, performing <em>undergraduate research</em>, doing <em>freelance development</em>, and now <em>interning</em> at a tech company.
+              To date I've had the privilege of bouncing between teams at my <em>co-op</em>, performing <em>undergraduate
+              research</em>, <em>interning at Roblox</em>, and now back working for them full-time.
             </p>
             <p>
-              I have a passion for continually bettering my skillset, so if you have a project you'd like to collaborate on, please don't hesitate to reach out!
+              I have a passion for continually bettering my skill-set, so if you have a project you'd like to collaborate
+              on, please don't hesitate to reach out!
             </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
@@ -89,7 +93,7 @@ const About = () => {
         <StyledAscii>
           <div className="wrapper">
             <p className="ascii" alt="Nautilus" title="Nautilus">
-              &nbsp;&nbsp;&nbsp;.?7!!!!!7!!~^:.{"\n"}
+            &nbsp;&nbsp;&nbsp;.?7!!!!!7!!~^:.{"\n"}
               &nbsp;&nbsp;&nbsp;.P:     ..:^~!77!:{"\n"}
               &nbsp;&nbsp;&nbsp;&nbsp;7J            .^7?~{"\n"}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??.             .7J^{"\n"}
