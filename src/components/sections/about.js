@@ -60,7 +60,7 @@ const StyledAscii = styled.div`
 
 const About = () => {
 
-  const skills = ['go', 'c/++', 'python', 'sql'];
+  const skills = ['go', 'python', 'c/++', 'sql', 'kafka', 'spark'];
 
   return (
     <StyledAboutSection id="about">
@@ -70,9 +70,10 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello Hello! My name is Will and I'm a software engineer. Lately I've been working to leverage
-              <em>analytics</em> to improve user <em>acquisition, retention, and monetization</em>. I have a passion
-              for creating scalable systems and writing good code.
+              Hello Hello! My name is Will and I'm a software engineer on Roblox's <em>data platform</em>. Lately I've
+              been building its <em>event ingest</em>, which handles over 10 trillion events a day, and designing
+              the <em>batch platform</em> that will run its pipelines. I have a passion for creating scalable systems
+              and writing good code.
             </p>
             <p>
               To date I've had the privilege of bouncing between teams at my <em>co-op</em>, performing <em>undergraduate
